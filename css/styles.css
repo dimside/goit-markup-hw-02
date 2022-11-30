@@ -44,15 +44,15 @@ body {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: var(--logo-head-studio-color);
-}
-
-.web {
 	color: var(--logo-web-color);
 }
 
+.studio {
+	color: var(--logo-head-studio-color);
+}
+
 .studio-footer {
-	color: var(--button-bcg-color);
+	color: var(--logo-foot-studio-color);
 }
 
 .footer .logo {
@@ -69,10 +69,6 @@ body {
 .site-nav .link {
 	font-weight: 700;
 	color: inherit;
-}
-
-.link.current {
-	text-decoration: underline;
 }
 
 .auth-nav .link {
@@ -119,7 +115,7 @@ body {
 }
 
 .button:hover,
-.button:active {
+.button:focus {
 	color: var(--accent-text-color);
 	background-color: var(--accent-bcg-color);
 }
@@ -145,6 +141,10 @@ body {
 
 .team {
 	background-color: var(--team-section-bcg-color);
+}
+
+.team-item {
+	background-color: var(--primary-background-color);
 }
 
 /* footer */
