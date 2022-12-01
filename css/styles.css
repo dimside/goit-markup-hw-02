@@ -24,8 +24,11 @@
 
 body {
 	font-family: "Roboto", sans-serif;
+	/* Вопрос: обязательно ли убирать line-hight и letter-spacing из body,
+	 так как это повлечёт за собой добавление доп классов и кода к ним. */
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
 	color: var(--primary-text-color);
 	background-color: var(--primary-background-color);
 }
@@ -94,16 +97,9 @@ body {
 	color: var(--hero-text-color);
 }
 
-.order.button {
-	font-weight: 700;
-	font-size: inherit;
-	line-height: 1.2;
-	letter-spacing: 0.04em;
-}
+/* portfolio and order buttons */
 
-/* buttons */
-
-.portfolio .button {
+.button {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: inherit;
@@ -112,6 +108,10 @@ body {
 	color: var(--button-text-color);
 	background-color: var(--button-bcg-color);
 	cursor: pointer;
+}
+
+.order .button {
+	line-height: 1.2;
 }
 
 .button:hover,
